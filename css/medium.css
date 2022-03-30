@@ -1,0 +1,54 @@
+@media (max-width: 1000px) {
+    section.main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        grid-column: 1 / 4;
+        grid-row: 1;  
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+    }
+
+    .temple-info {
+        text-align: center;
+    }
+
+    div.map {
+        grid-column: 1 / 3;
+        margin: 0 auto;
+    }
+
+    .temple-address {
+        text-align: center;
+        grid-column: 1 / 3;
+    }
+
+    section.ajax-section {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        margin: 10px auto;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-top: 55px;
+    }
+
+    .contact-info {
+        text-align: end;
+        margin: 20px 0;
+    }
+
+    footer {
+        margin: 0;
+        padding: 10px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+}
