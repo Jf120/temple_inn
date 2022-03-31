@@ -75,4 +75,72 @@
         margin-top: 40px;
     }
 
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    .city-temp {
+        font-size: 3rem;
+    }
+
+    .temple-address h2 {
+        font-size: 1.6em;
+    }
+
+    .temple-address h3 {
+        font-size: 1.3em;
+    }
+
+    .contact-info h2 {
+        font-size: 1.6em;
+    }
+
+    figure {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+
+    .city {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .city-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .temple-info h2 {
+        font-size: 1.8em;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    iframe {
+        width: 550px;
+        height: 400px;
+    }   
+
+}
+
+@media (max-width: 870px) {
+
+    nav a, nav button {
+        font-size: 1.2em;
+    }
+
+    div.title {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 689px) {
+
+    iframe {
+        width: 400px;
+    }
 }

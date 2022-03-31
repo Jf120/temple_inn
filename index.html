@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/large.css"></stylesheet>
     <link rel="stylesheet" href="./css/medium.css"></stylesheet>
+    <link rel="stylesheet" href="./css/small.css"></stylesheet>
     <link rel="shortcut icon" href="./images/hotel.ico">
 </head>
 <body>
@@ -16,13 +17,16 @@
         <div class="title">
             <h1 class="logo">Temple Inn & Suites</h1>
         </div>
-        <nav>
+        <nav class="navbar" id="nav">
             <ul>
                 <li><a href="temples.html">Temples</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><button type="button">Book Now!</li>
             </ul>
         </nav>
+        <div class="icon">
+            <img id="icon" src="./images/menu.png" alt="Menu Icon">
+        </div>
     </header>
     <main>
         <!-- Container for the image gallery -->
@@ -106,7 +110,7 @@
             </div>
     
             <div class="contact-info">
-                <h3>Contact Information</h3>
+                <h2>Contact Information</h2>
                 <p>Ipsum sit anim culpa aliquip irure ipsum.</p>
             </div>
     
@@ -126,6 +130,6 @@
     <footer>
         <p>&copy; <span id="year"></span> .:|:. Jorge Flores .:|:. Guatemala</p>    
     </footer>    
-    <script src="./js/home.js"></script>
+    <script type="module" src="./js/home.js"></script>
 </body>
 </html>

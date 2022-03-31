@@ -1,7 +1,3 @@
-// set current year in footer
-const currentDate = new Date();
-document.querySelector('#year').textContent = currentDate.getFullYear();
-
 const apiKey = "6d8bed17e78d94b0f60b75c0e90d68fa";
 let slideIndex = 1;
 let weatherIndex = 0
@@ -10,7 +6,7 @@ getWeather(weatherIndex);
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+window.plusSlides = function(n) {
     showSlides(slideIndex += n);
     resetList();
     getWeather(weatherIndex += n);
@@ -76,3 +72,9 @@ function getWeather(n) {
 function resetList() {
     list.innerHTML = "";
 };
+
+
+import * as main from './main.js';
+
+main.setDate();
+main.navBar();
