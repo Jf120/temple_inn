@@ -1,14 +1,25 @@
+const temples = await fetch('./js/temples.json').then(function (response) {
+    return response.json();
+}).then(function (jsonObject) {
+    let data = jsonObject['temples'];
+    return data;
+    }
+)
+
 const apiKey = "6d8bed17e78d94b0f60b75c0e90d68fa";
 let slideIndex = 1;
 let weatherIndex = 0
 let citiesList = document.querySelectorAll(".container .mySlides img");
+
 getWeather(weatherIndex);
 showSlides(slideIndex);
+getInfo(weatherIndex);
 
 // Next/previous controls
 window.plusSlides = function(n) {
     showSlides(slideIndex += n);
-    getWeather(weatherIndex += n);
+    getInfo(weatherIndex += n);
+    getWeather(weatherIndex);   
 }
 
 // Thumbnail image controls
@@ -28,10 +39,17 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
 }
 
-function getWeather(n) {
-
+function getInfo(n) {
     if (n > citiesList.length - 1) {weatherIndex = 0}
     if (n < 0) {weatherIndex = citiesList.length-1}
+
+    let id = `${weatherIndex}`;
+    let infoHolder = document.getElementById(id);
+
+    infoHolder.innerHTML = `This temple was announced on ${temples[weatherIndex].announced} and it was dedicated on ${temples[weatherIndex].dedicated}`;
+}
+
+function getWeather(n) {
 
     //ajax here
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${citiesList[weatherIndex].alt}&appid=${apiKey}&units=metric`;
