@@ -166,6 +166,10 @@
     grid-row: 1;
     text-align: end;
   }
+
+  section.temples {
+    grid-column: 1 / 4;
+  }
 }
 
 @media screen and (max-width: 1000px) {

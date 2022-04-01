@@ -5,7 +5,8 @@
             "address": "24 Avenida 2-20, Zona 15 Vista Hermosa 1 Guatemala Guatemala City, Guatemala",
             "telephone": "(502) 2329-8300",
             "announced": "1 April 1981",
-            "dedicated": "14 December 1984"
+            "dedicated": "14 December 1984",
+            "image": "./images/temples/guatemala.png"
         },
         {
             "name": "Mexico City Mexico Temple",
