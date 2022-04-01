@@ -8,7 +8,6 @@ showSlides(slideIndex);
 // Next/previous controls
 window.plusSlides = function(n) {
     showSlides(slideIndex += n);
-    resetList();
     getWeather(weatherIndex += n);
 }
 
@@ -29,14 +28,10 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
 }
 
-const list = document.querySelector(".ajax-section .cities");
-
 function getWeather(n) {
 
     if (n > citiesList.length - 1) {weatherIndex = 0}
     if (n < 0) {weatherIndex = citiesList.length-1}
-
-    console.log(weatherIndex);
 
     //ajax here
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${citiesList[weatherIndex].alt}&appid=${apiKey}&units=metric`;
@@ -49,29 +44,35 @@ function getWeather(n) {
         weather[0]["icon"]
         }.svg`;
 
-        const li = document.createElement("li");
-        li.classList.add("city");
-        const markup = `
-        <h2 class="city-name" data-name="${name},${sys.country}">
-            <span>${name}</span>
-            <sup>${sys.country}</sup>
-        </h2>
-        <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
-        <figure>
-            <img class="city-icon" src="${icon}" alt="${
-        weather[0]["description"]
-        }">
-            <figcaption>${weather[0]["description"]}</figcaption>
-        </figure>
-        `;
-        li.innerHTML = markup;
-        list.appendChild(li);
+        document.querySelector(".city-name span").innerHTML = name;
+        document.querySelector(".city-name sup").innerHTML = sys.country;
+        document.querySelector(".city-temp").innerHTML = Math.round(main.temp);
+        let supTemp = document.createElement("sup");
+        supTemp.innerHTML = "&deg;C";
+        document.querySelector(".city-temp").appendChild(supTemp);
+        document.querySelector(".city-temp sup").innerText = "°C";
+        document.querySelector(".city-icon").src = icon;
+        document.querySelector(".city-icon").alt = weather[0]["description"];
+        // const li = document.createElement("li");
+        // li.classList.add("city");
+        // const markup = `
+        // <h2 class="city-name" data-name="${name},${sys.country}">
+        //     <span>${name}</span>
+        //     <sup>${sys.country}</sup>
+        // </h2>
+        // <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+        // <figure>
+        //     <img class="city-icon" src="${icon}" alt="${
+        // weather[0]["description"]
+        // }">
+        //     <figcaption>${weather[0]["description"]}</figcaption>
+        // </figure>
+        // `;
+        // li.innerHTML = markup;
+        // list.appendChild(li);
     })
 };
 
-function resetList() {
-    list.innerHTML = "";
-};
 
 
 import * as main from './main.js';

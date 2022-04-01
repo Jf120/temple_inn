@@ -30,7 +30,7 @@
     </header>
     <main>
         <!-- Container for the image gallery -->
-        <div class="container">
+        <div class="container main">
 
             <!-- Full-width images with number text -->
             <div class="mySlides">
@@ -100,8 +100,7 @@
         <section class="main">
     
             <div class="temple-address" id="more-info">
-                <h2>Our Location</h2>
-                <h3>Getting There</h3>
+                <h2>Our Location</h2>   
                 <p>
                     Temple Inn & Suites <br>                    
                     Avenida la Reforma y 14 Calle,Guatemala City, <br>
@@ -114,25 +113,40 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.3350098813307!2d-90.49547398517437!3d14.579976689815608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a39b9db4f0e3%3A0x93fb9aa9f9d920ba!2sArkadia%20Shopping!5e0!3m2!1sen!2sgt!4v1648485183170!5m2!1sen!2sgt" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
     
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p>Ipsum sit anim culpa aliquip irure ipsum.</p>
-            </div>
-    
-            <div class="social-icons">
-                <a href="https://www.facebook.com/" target="_blank"><img src="./images/f_logo_RGB-Blue_58.png" alt="Facebook"></a>
-                <a href="https://www.twitter.com/" target="_blank"><img src="./images/2021 Twitter logo - blue.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./images/Instagram_Glyph_Gradient_RGB.png" alt="Instagram"></a>
-            </div>
-    
             <section class="ajax-section">
-                <div class="container">
-                    <ul class="cities"></ul>
+                <div class="container temperature">
+                    <ul class="cities">
+                        <li class="city">
+                            <h2 class="city-name" data-name="">
+                                <span></span>
+                                <sup></sup>
+                            </h2>
+                            <div class="city-temp">
+                                <sup></sup>
+                            </div>
+                            <figure>
+                                <img class="city-icon">
+                            </figure>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </section>
     </main>
     <footer>
+        <div class="title">
+            <h1 class="logo">Temple Inn & Suites</h1>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Ipsum sit anim culpa aliquip irure ipsum.</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./images/f_logo_RGB-Blue_58.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="./images/2021 Twitter logo - blue.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./images/Instagram_Glyph_Gradient_RGB.png" alt="Instagram"></a>
+        </div>
         <p>&copy; <span id="year"></span> .:|:. Jorge Flores .:|:. Guatemala</p>    
     </footer>    
     <script type="module" src="./js/home.js"></script>
