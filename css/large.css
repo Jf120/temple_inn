@@ -18,7 +18,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-column: 1 / 4;
-    grid-gap: 20px;
   }
   
   section.main {
@@ -27,8 +26,8 @@
     grid-template-rows: repeat(3, auto);
     grid-column: 1 / 4;
     grid-row: 3;
-    grid-gap: 20px;
-    margin: 0 20px;
+    margin: 80px 20px;
+    border: 1px solid #ccc;
   }
   
   .temple-info {
@@ -51,6 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 30px;
   }
 
   .map {
@@ -87,11 +87,8 @@
     grid-column: 3;
     text-align: left;
     margin: auto 0;
+    padding: 30px;
   } 
-
-  div.container {
-    margin-bottom: 20px;
-  }
 
   main p {
     font-size: 1em;
