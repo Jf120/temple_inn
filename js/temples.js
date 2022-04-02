@@ -29,6 +29,7 @@ function displayTemples(temple) {
     image.setAttribute('src', temple.image);
     image.setAttribute('alt', `image of ${temple.name}`);
     image.setAttribute('loading', 'lazy');
+    image.setAttribute('class', 'temple-img');
     
     if (localStorage.getItem(`${temple.name}`) === 'liked') {
         like.setAttribute('src', './images/heart-full.png')

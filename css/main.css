@@ -125,6 +125,15 @@ div.temple {
     grid-gap: 10px;
 }
 
+div.temple:hover {
+    background-color: #f7f7ff;
+    border: 1px solid #0e3b60;
+}
+
+.temple-img {
+    width: 100%;
+}
+
 .logo a {
     text-decoration: none;
 }

@@ -6,42 +6,47 @@
             "telephone": "(502) 2329-8300",
             "announced": "1 April 1981",
             "dedicated": "14 December 1984",
-            "image": "./images/temples/guatemala.png"
+            "image": "./images/temples/guatemala.jpg"
         },
         {
             "name": "Mexico City Mexico Temple",
             "address": "Avenida 510 #90 Col. San Juan de Aragon 07950 México, Distrito Federal, Mexico",
             "telephone": "(52) 55-5003-3700",
             "announced": "3 April 1976",
-            "dedicated": "2 December 1983"
+            "dedicated": "2 December 1983",
+            "image": "./images/temples/mexico.jpg"
         },
         {
             "name": "Rome Italy Temple",
             "address": "Via di Settebagni 376 Rome RM Italy",
             "telephone": "(39) 06-9480-5050",
             "announced": "4 October 2008",
-            "dedicated": "10 March 2019"
+            "dedicated": "10 March 2019",
+            "image": "./images/temples/italy.jpg"
         },
         {
             "name": "São Paulo Brazil Temple",
             "address": "Av. Prof. Francisco Morato, 2390 Caxingui 05512-300 São Paulo - SP, Brazil",
             "telephone": "(55) 11-3723-7600",
             "announced": "1 March 1975",
-            "dedicated": "30 October 1978"
+            "dedicated": "30 October 1978",
+            "image": "./images/temples/brazil.jpg"
         },
         {
             "name": "Salt Lake Temple",
             "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
             "telephone": "N/A",
             "announced": "28 July 1847",
-            "dedicated": "6 April 1893"
+            "dedicated": "6 April 1893",
+            "image": "./images/temples/salt-lake.jpg"
         },
         {
             "name": "San Diego California Temple",
             "address": "7474 Charmant Dr San Diego CA 92122-5000 United States",
             "telephone": "(1) 858-622-0991",
             "announced": "7 April 1984",
-            "dedicated": "25 April 1993"
+            "dedicated": "25 April 1993",
+            "image": "./images/temples/san-diego.jpg"
         }
     ]
 }
