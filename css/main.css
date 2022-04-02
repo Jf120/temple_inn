@@ -130,6 +130,14 @@ div.temple:hover {
     border: 1px solid #0e3b60;
 }
 
+.address-text {
+    font-weight: bold;
+}
+
+section.temples {
+    margin: 40px 0;
+}
+
 .temple-img {
     width: 100%;
 }

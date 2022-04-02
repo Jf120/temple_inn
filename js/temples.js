@@ -21,9 +21,10 @@ function displayTemples(temple) {
     // Add address, phone, and website to the card
     name.textContent = temple.name;
     address.textContent = temple.address;
-    phone.textContent = `${temple.telephone}`;
-    announced.textContent = `${temple.announced}`;
-    dedicated.textContent = `${temple.dedicated}`;
+    address.setAttribute('class', 'address-text');
+    phone.textContent = `Telephone: ${temple.telephone}`;
+    announced.textContent = `Date of announcement: ${temple.announced}`;
+    dedicated.textContent = `Date it was dedicated: ${temple.dedicated}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
     image.setAttribute('src', temple.image);

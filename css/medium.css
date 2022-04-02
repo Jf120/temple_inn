@@ -115,6 +115,10 @@
         top: 0.5em;
     }
 
+    div.temple h3 {
+        text-align: center;
+    }
+
     .temple-address h2 {
         font-size: 1.6em;
     }
