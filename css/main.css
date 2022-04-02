@@ -134,6 +134,18 @@ div.temple:hover {
     font-weight: bold;
 }
 
+footer a {
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #0e3b60;
+}
+
+footer a:hover {
+    color: #01b6d1;
+}
+
 section.temples {
     margin: 40px 0;
 }
