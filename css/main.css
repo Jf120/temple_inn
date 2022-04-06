@@ -352,6 +352,16 @@ div.full-name > div.input > input {
     align-items: center;
 }
 
+#button {
+    border: 1px solid #262626;
+    background-color: #f7f7ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 .reservation-info img {
     max-width: 300px;
 }
