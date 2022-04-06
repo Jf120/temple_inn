@@ -188,6 +188,15 @@
     bottom: 20px;
     right: 20px;
   }
+
+  .temple-info {
+    grid-row: 1;
+    grid-column: 1;
+    border: 1px solid #262626;
+    background-color: #f7f7ff;
+  }
+
+ 
 }
 
 @media screen and (max-width: 1000px) {

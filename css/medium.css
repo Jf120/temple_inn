@@ -165,6 +165,18 @@
         height: 400px;
     }   
 
+    .specialized-cards {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .services-img {
+        justify-content: center;
+    }
+
+    .specialized {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 870px) {

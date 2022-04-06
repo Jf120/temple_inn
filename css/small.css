@@ -162,6 +162,21 @@
     .city-name span {
         text-align: center;
     }
+
+    .services-buttons {
+        grid-gap: 20px;
+    }
+
+    .specialized {
+        padding: 40px;
+        margin: 0;
+    }
+
+    .specialized-cards {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
 }
 
 @media (max-width: 540px) {
