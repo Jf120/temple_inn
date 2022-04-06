@@ -179,6 +179,7 @@ nav ul li {
     position: relative;
     grid-row: 1;
     grid-column: 1 / 4;
+
 }
 
 /* Hide the images by default */
@@ -298,4 +299,74 @@ ul.cities {
 
 body {
     animation: transitionIn 1s;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    margin-bottom: 5px;
+}
+
+.full-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.input, div.select {
+    margin: 8px 0;
+}
+
+input, textarea, select {
+    border: 1px solid #262626;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+input, textarea, label, select {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.select > div.input {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+div.full-name > div.input > input {
+    min-width: 200px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-info img {
+    max-width: 300px;
+}
+
+#price {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.thanks-section {
+    grid-column: 1 / 4;
+    text-align: center;
+    margin: 300px 0;
+}
+
+.thanks-section h1, .thanks-section h2 {
+    margin: 30px 0;
 }

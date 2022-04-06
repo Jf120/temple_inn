@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/large.css"></stylesheet>
+    <link rel="stylesheet" href="./css/medium.css"></stylesheet>
+    <link rel="stylesheet" href="./css/small.css"></stylesheet>
+    <link rel="shortcut icon" href="./images/hotel.ico">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1 class="logo"><a href="index.html">Temple Inn & Suites</a></h1>
+        </div>
+        <nav class="navbar" id="nav">
+            <ul>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><button onclick="window.location.href='./reservation.html'" type="button">Book Now!</li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <img id="icon" src="./images/menu.png" alt="Menu Icon">
+        </div>
+    </header>
+    <main class="reservation-main">
+        <section class="form">
+            <div class="form-title">
+                <h2>Guest Information</h2>
+            </div>
+                <form action="thankyou.html">
+
+                    <div class="full-name">
+                        <div class="input">
+                            <input type="text" name="firstname" placeholder="First Name" required>
+                        </div>
+                        
+                        <div class="input">
+                            <input type="text" name="lastname" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="email" class="left">
+                            Email
+                        </label>
+                        <input type="text" name="email" placeholder="user@email.com" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="phone" class="left">
+                            Phone Number
+                        </label>
+                        <input type="tel" name="phone" placeholder="(555) 555-5555" required>
+                    </div>
+                    
+                    <div class="select">
+                        <div class="input">
+                            <select name="location" id="location" required>
+                                <option value="">Location</option>
+                                <option value="guatemala" alt="Guatemala City Temple">Guatemala</option>
+                                <option value="san-diego">San Diego</option>
+                                <option value="salt-lake">Salt Lake</option>
+                                <option value="brazil">Brazil</option>
+                                <option value="mexico">Mexico City</option>
+                                <option value="italy">Rome</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input">
+                            <select name="room-type" id="room-type" required>
+                                <option value="">Select Room Type</option>
+                                <option value="Single">Single</option>
+                                <option value="Double">Double</option>
+                                <option value="Triple">Triple</option>
+                                <option value="Quad">Quad</option>
+                                <option value="Queen">Queen</option>
+                                <option value="King">King</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="special-accomodation" id="special-accomodation"class="left">
+                            Special Accomodation / Comments
+                        </label>
+                        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Please insert here any extra request."></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="hidden" id="loaded" name="loadedbyuser">
+                        <input type="submit" value="Submit" class="submit">
+                    </div>
+                    
+                </form>
+            
+        </section>
+        <section class="reservation-info">
+            <img src="./images/temples/default.jfif" alt="Temple" id="destination">
+            <p id="roomType">Room type: N/A</p>
+            <p id="price">Total: N/A</p>
+        </section>
+    </main>
+    <footer>
+        <div class="title">
+            <h1 class="logo">Temple Inn & Suites</h1>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Telephone: +502 5628-4569</p>
+            <p>Email: templeinn@suites.com</p>
+            <p><a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+USA/@38.9832518,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="10px"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 144C320 223.5 255.5 288 176 288C96.47 288 32 223.5 32 144C32 64.47 96.47 0 176 0C255.5 0 320 64.47 320 144zM192 64C192 55.16 184.8 48 176 48C122.1 48 80 90.98 80 144C80 152.8 87.16 160 96 160C104.8 160 112 152.8 112 144C112 108.7 140.7 80 176 80C184.8 80 192 72.84 192 64zM144 480V317.1C154.4 319 165.1 319.1 176 319.1C186.9 319.1 197.6 319 208 317.1V480C208 497.7 193.7 512 176 512C158.3 512 144 497.7 144 480z"/></svg></i>Headquarter's Location</a></p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./images/f_logo_RGB-Blue_58.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="./images/2021 Twitter logo - blue.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./images/Instagram_Glyph_Gradient_RGB.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; <span id="year"></span> .:|:. Jorge Flores .:|:. Guatemala</p>    
+    </footer>    
+    <script type="module" src="./js/reservation.js"></script>
+</body>
+</html>

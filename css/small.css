@@ -199,4 +199,46 @@
     .ajax-section .city-temp {
         font-size: 3rem;
     }
+
+    .select {
+        justify-content: space-between;
+    }
+    
+    div.input > select {
+        margin: 10px 0;
+    }
+
+    select {
+        min-width: 210px;
+    }
+
+    .select > div.input {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .full-name {
+        flex-direction: column;
+    }
+
+    input, textarea {
+        max-width: 300px;
+    }
+
+    .select {
+        justify-content: space-between;
+    }
+    
+    div.input > select {
+        margin: 10px 0;
+    }
+
+    .select > div.input {
+        margin-right: 0;
+    }
+
+    .form-title {
+        margin-bottom: 20px;
+    }
 }
