@@ -72,7 +72,7 @@
         <section class="specialized-cards">
                 <div>
                     <h2 class="services-title specializedTitle" id="services-title">Specialized Services</h2>
-                    <ul class="specialized specializedList">
+                    <ul class="specialized">
                         <li>
                             <h3>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</h3>
                         </li>
@@ -96,9 +96,45 @@
                         </li>
                     </ul>
                 </div>
-            <div class="services-img specializedImg">
-                <img src="./images/services.jpg" alt="Female tourist talking to female receptionist" id="services" >
+            <div class="services-img">
+                <img src="./images/services.jpg" alt="Female tourist talking to female receptionist" id="services">
             </div>
+        </section>
+        <section class="form" id="services-form" style="display: none;">
+            <div class="form-title">
+                <h2 style="font-size: 2em; margin-bottom: 20px;">Contact Us</h2>
+            </div>
+            <form action="thankyou-contact.html">
+
+                <div class="full-name">
+                    <div class="input">
+                        <input type="text" name="firstname" placeholder="First Name" required>
+                    </div>
+                    
+                    <div class="input">
+                        <input type="text" name="lastname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                
+                <div class="input">
+                    <label for="email" class="left">
+                        Email
+                    </label>
+                    <input type="text" name="email" placeholder="user@email.com" required>
+                </div>
+                
+                <div class="input">
+                    <label for="phone" class="left">
+                        Phone Number
+                    </label>
+                    <input type="tel" name="phone" placeholder="(555) 555-5555" required>
+                </div>
+
+                <div class="button">
+                    <input type="hidden" id="loaded" name="loadedbyuser">
+                    <input type="submit" value="Submit" class="submit" id="button">
+                </div>
+            </form>
         </section>
             
     </main>

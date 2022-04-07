@@ -196,7 +196,10 @@
     background-color: #f7f7ff;
   }
 
- 
+  #services-form {
+    grid-column: 1 / 4;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
